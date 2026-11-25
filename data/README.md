@@ -59,6 +59,42 @@ Row counts: 1,348,454 postings; 1,296,381 with skills; 1,297,332 with a descript
 **onet** (`raw/onet/db_30_2_text/`): 41 tab-separated files.
 - The ones we use are `Technology Skills.txt` (32,773 rows; 8,785 unique technologies, 171 flagged "Hot Technology"), `Occupation Data.txt` (1,016 occupations) and `Alternate Titles.txt`.
 
+## Processed data (tech only)
+
+Build these after downloading:
+
+```bash
+python -m skillpath.data.preprocess_jobs      # about 3 min, reads the 5 GB description file
+python -m skillpath.data.preprocess_resumes   # a few seconds
+```
+
+Once these are built, teammates only need the two small parquet files, not the 6 GB raw jobs data.
+
+**`processed/jobs.parquet`**: 47,431 tech jobs, 115 MB.
+- Columns: `job_id`, `title`, `role_family`, `company`, `location`, `country`, `level`, `job_type`, `first_seen`, `skills` (list), `description`, `job_link`.
+- How it's built:
+  1. Of 1.35M postings, keep the 61,240 whose title maps to a tech role family ([roles.py](../src/skillpath/data/roles.py)).
+  2. Keep those with a description of at least 200 characters.
+  3. Remove 11,001 reposts (same company, title and description).
+- 99.9% have skills (median 23 per job). The median description is 3,684 characters.
+
+| Role family | Jobs |
+|---|---:|
+| Software Engineer | 17,548 |
+| IT/Systems | 12,830 |
+| Cloud/DevOps Engineer | 3,685 |
+| Security Engineer | 3,540 |
+| QA/Test Engineer | 3,073 |
+| Data Analyst | 2,492 |
+| Data Engineer | 2,093 |
+| AI/ML Engineer | 1,374 |
+| Data Scientist | 796 |
+
+**`processed/resumes.parquet`**: 157 tech resumes, out of 2,484.
+- Columns: `resume_id`, `category`, `title`, `role_family`, `tech_terms` (list), `text`.
+- A resume is kept if it's in INFORMATION-TECHNOLOGY and mentions at least 2 core tech skills, or if it's in any other category and mentions at least 6. This catches software people filed under ENGINEERING, CONSULTANT and so on.
+- Breakdown: 90 IT, 20 Engineering, 17 Consultant, 30 other.
+
 ### Collaborative filtering check
 
 None of the four datasets has user-level interactions such as ratings, enrollments or clicks per user. The courses dataset has only an aggregate rating per course. So collaborative filtering (**M6-04**) would need a separate interaction dataset. The core plan uses content-based and hybrid ranking instead.
