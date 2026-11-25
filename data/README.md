@@ -66,6 +66,7 @@ Build these after downloading:
 ```bash
 python -m skillpath.data.preprocess_jobs      # about 3 min, reads the 5 GB description file
 python -m skillpath.data.preprocess_resumes   # a few seconds
+python -m skillpath.skills.annotate           # about 3 min: canonical skills for jobs and courses (M1-07)
 ```
 
 Once these are built, teammates only need the two small parquet files, not the 6 GB raw jobs data.
@@ -89,6 +90,18 @@ Once these are built, teammates only need the two small parquet files, not the 6
 | Data Engineer | 2,093 |
 | AI/ML Engineer | 1,374 |
 | Data Scientist | 796 |
+
+**Canonical skills on jobs (M1-07).** `skillpath.skills.annotate` adds three columns:
+
+| Column | Contents | Jobs with at least 3 skills | Median |
+|---|---|---:|---:|
+| `skills_listed` | The employer's listed skills, mapped to canonical names | 90.7% | 9 |
+| `skills_text` | Canonical skills found in the title and description | 94.0% | 11 |
+| `skills_canonical` | Both combined. **The recommenders use this one.** | 97.2% | 13 |
+
+**`processed/courses.parquet`**: 3,424 Coursera courses after de-duplication.
+- Columns: `course_id`, `title`, `provider`, `difficulty`, `rating`, `url`, `skills` (canonical), `is_tech`, `description`, `skills_raw`.
+- 1,945 courses are tech (`is_tech`: at least one technical skill). All of them have skills; 56% have 3 or more, median 3. The other courses are humanities, business and so on.
 
 **`processed/resumes.parquet`**: 157 tech resumes, out of 2,484.
 - Columns: `resume_id`, `category`, `title`, `role_family`, `tech_terms` (list), `text`.
