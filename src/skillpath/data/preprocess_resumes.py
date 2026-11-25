@@ -50,14 +50,17 @@ def tech_terms(text: str) -> list[str]:
 
 
 def resume_title(text: str) -> str:
-    """The resume's headline: the first chunk of text before a run of whitespace."""
-    return re.split(r"\s{2,}|\t", (text or "").strip(), maxsplit=1)[0][:80].strip()
+    """The resume's headline: the first line, or the first chunk before a run of whitespace."""
+    return re.split(r"\n|\s{2,}|\t", (text or "").strip(), maxsplit=1)[0][:80].strip()
 
 
 def build() -> pd.DataFrame:
     df = pd.read_csv(RESUMES_CSV, usecols=["ID", "Resume_str", "Category"])
     df = df.rename(columns={"ID": "resume_id", "Resume_str": "text", "Category": "category"})
-    df["text"] = df["text"].fillna("").str.replace(r"[ \t]+", " ", regex=True).str.strip()
+    # The raw text separates sections with runs of spaces ("HEADLINE      Summary      ...").
+    # Turn those runs into line breaks so the headline stays separable, then collapse the rest.
+    df["text"] = (df["text"].fillna("").str.strip()
+                  .str.replace(r"[ \t]{3,}", "\n", regex=True).str.replace(r"[ \t]+", " ", regex=True))
     df["tech_terms"] = df["text"].map(tech_terms)
     n_terms = df["tech_terms"].str.len()
     is_tech = ((df["category"] == TECH_CATEGORY) & (n_terms >= MIN_TECH_TERMS_IT)) | (n_terms >= MIN_TECH_TERMS)

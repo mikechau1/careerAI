@@ -38,6 +38,29 @@ EXCLUDE = (r"\bsales\b|account executive|business develop|real estate|property|m
            r"|teacher|instructor|professor|tutor|\btrainer\b|annotat|\bwriter\b|marketing"
            r"|counsel|attorney|paralegal|human resource|\bhr\b")
 
+# Families that share enough skills that someone targeting one would consider the other
+ADJACENT = {
+    "AI/ML Engineer": {"Data Scientist", "Data Engineer", "Software Engineer"},
+    "Data Scientist": {"AI/ML Engineer", "Data Analyst", "Data Engineer"},
+    "Data Engineer": {"Data Scientist", "AI/ML Engineer", "Data Analyst", "Software Engineer", "Cloud/DevOps Engineer"},
+    "Data Analyst": {"Data Scientist", "Data Engineer"},
+    "Software Engineer": {"AI/ML Engineer", "QA/Test Engineer", "Cloud/DevOps Engineer", "Data Engineer"},
+    "Cloud/DevOps Engineer": {"Software Engineer", "IT/Systems", "Security Engineer", "Data Engineer"},
+    "Security Engineer": {"IT/Systems", "Cloud/DevOps Engineer"},
+    "QA/Test Engineer": {"Software Engineer"},
+    "IT/Systems": {"Cloud/DevOps Engineer", "Security Engineer"},
+}
+
+
+def role_relation(target: str | None, family: str | None) -> int:
+    """2 = same family, 1 = adjacent family, 0 = unrelated or unknown."""
+    if not target or not family:
+        return 0
+    if target == family:
+        return 2
+    return 1 if family in ADJACENT.get(target, set()) else 0
+
+
 _FAMILY_RES = [(name, re.compile(rx, re.I)) for name, rx in ROLE_FAMILIES]
 _EXCLUDE_RE = re.compile(EXCLUDE, re.I)
 
