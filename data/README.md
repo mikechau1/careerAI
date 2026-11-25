@@ -95,6 +95,29 @@ Once these are built, teammates only need the two small parquet files, not the 6
 - A resume is kept if it's in INFORMATION-TECHNOLOGY and mentions at least 2 core tech skills, or if it's in any other category and mentions at least 6. This catches software people filed under ENGINEERING, CONSULTANT and so on.
 - Breakdown: 90 IT, 20 Engineering, 17 Consultant, 30 other.
 
+## Skill taxonomy (`skills.csv`, committed)
+
+347 canonical skills (331 technical, 16 soft) in 18 categories. Every part of the system should go through this file to name skills, so that "k8s", "Kubernetes" and "Red Hat OpenShift" count as the same skill.
+
+```python
+from skillpath.skills.taxonomy import load_taxonomy
+tax = load_taxonomy()
+tax.normalize("ReactJS")        # "React"
+tax.normalize_list(job_skills)  # canonical, deduplicated, unknowns dropped
+tax.prose_aliases("R")          # aliases safe to search for in free text
+```
+
+**Columns:** `skill`, `category`, `aliases` (pipe-separated), `job_count` / `job_share` (number and share of tech jobs that list the skill), `onet_hot` (O*NET "Hot Technology").
+
+**How it's built:**
+- The source of truth is the hand-curated [seed.py](../src/skillpath/skills/seed.py).
+- `python -m skillpath.skills.build` adds 257 O*NET technology names as aliases (e.g. "Oracle Java" → Java, "Border Gateway Protocol BGP" → Routing and Switching) and counts the jobs for each skill.
+- 304 skills appear in at least 100 of the 47k tech jobs. The most common are Python (24% of jobs), SQL (20%), Java (16%) and AWS (15%).
+
+**Coverage:** 41% of raw skill mentions in the jobs map to a skill. Most of the unmapped mentions aren't skills: degrees ("bachelor's degree"), benefits ("paid time off"), citizenship and generic words ("innovation"). The build prints the top unmapped strings so they can be reviewed.
+
+**To add a skill or alias:** edit `seed.py`, rerun the build, and commit both files. The build fails if two skills claim the same alias. `EXACT_ONLY` in `seed.py` lists ambiguous forms ("R", "Go", "AD", "rest"). Those match exact skill-list entries only, never free text.
+
 ### Collaborative filtering check
 
 None of the four datasets has user-level interactions such as ratings, enrollments or clicks per user. The courses dataset has only an aggregate rating per course. So collaborative filtering (**M6-04**) would need a separate interaction dataset. The core plan uses content-based and hybrid ranking instead.
