@@ -21,5 +21,7 @@ def test_annotated_outputs_have_skill_columns():
     jobs = pd.read_parquet(PROCESSED_DIR / "jobs.parquet", columns=["skills_listed", "skills_text", "skills_canonical"])
     assert (jobs["skills_canonical"].str.len() >= 3).mean() > 0.9
     courses = pd.read_parquet(PROCESSED_DIR / "courses.parquet")
-    assert {"course_id", "title", "provider", "url", "skills", "is_tech"} <= set(courses.columns)
+    assert {"course_id", "title", "provider", "url", "skills", "skills_field", "is_tech"} <= set(courses.columns)
     assert courses["course_id"].is_unique
+    onboarding = courses[courses["title"] == "Create Online Employee Onboarding Course with Eduflow"]
+    assert onboarding.empty or "Deep Learning" not in list(onboarding.iloc[0]["skills"])  # noisy Skills field ignored
