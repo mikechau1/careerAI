@@ -24,6 +24,10 @@ python-dotenv>=1.0,<2.0
 streamlit>=1.38
 plotly>=5.22
 
+# Data download (scripts/download_data.py)
+kaggle>=1.6
+six                             # kaggle 2.x imports it without declaring it
+
 # Dev
 pytest>=8.0
 
