@@ -1,0 +1,348 @@
+skill,category,aliases,job_count,job_share,onet_hot
+REST APIs,Backend & APIs,rest|rest api|restful|restful apis|restful api|restful web services|rest services|api|apis|api development|web services,4762,0.1004,False
+System Design,Backend & APIs,software architecture|systems architecture|system architecture|distributed systems|scalable systems|scalability,3813,0.0804,False
+.NET,Backend & APIs,dotnet|net framework|net core|asp.net|asp.net core|microsoft .net framework|microsoft asp.net,2441,0.0515,True
+Microservices,Backend & APIs,microservices architecture|microservice|micro services,2164,0.0456,False
+Node.js,Backend & APIs,node|nodejs|node js,1984,0.0418,True
+Spring,Backend & APIs,spring framework|spring boot|springboot|spring mvc,1639,0.0346,True
+Object-Oriented Programming,Backend & APIs,oop|object oriented programming|object oriented design|ood|object-oriented design|objectoriented programming|objectoriented design|object oriented programming software,1601,0.0338,False
+Apache Kafka,Backend & APIs,kafka,1418,0.0299,True
+Data Structures,Backend & APIs,data structures and algorithms|algorithms|dsa,1352,0.0285,False
+Design Patterns,Backend & APIs,software design patterns,1026,0.0216,False
+Full Stack Development,Backend & APIs,full stack|fullstack|full-stack|full-stack development|fullstack development,905,0.0191,False
+SOAP,Backend & APIs,soap web services|soap apis|wsdl,721,0.0152,False
+Backend Development,Backend & APIs,back end development|back-end development|backend|back end|back-end|server side development,522,0.011,False
+GraphQL,Backend & APIs,,440,0.0093,True
+Message Queues,Backend & APIs,message queue|message queuing|rabbitmq|activemq|amazon sqs|sqs,387,0.0082,False
+Hibernate,Backend & APIs,,317,0.0067,False
+Django,Backend & APIs,,282,0.0059,True
+Flask,Backend & APIs,,210,0.0044,False
+Ruby on Rails,Backend & APIs,rails|ror,169,0.0036,False
+Express.js,Backend & APIs,express|expressjs,138,0.0029,False
+gRPC,Backend & APIs,,123,0.0026,False
+Laravel,Backend & APIs,,97,0.002,False
+FastAPI,Backend & APIs,fast api,64,0.0013,False
+AWS,Cloud,amazon web services|amazon web services aws|amazon web services aws software|aws cloud,6915,0.1458,True
+Cloud Computing,Cloud,cloud|cloud services|cloud technologies|cloud platforms|cloud infrastructure|cloud solutions|saas|paas|iaas|software as a service saas|platform as a service paas,5864,0.1236,False
+Microsoft Azure,Cloud,azure|azure cloud|microsoft azure software,4917,0.1037,True
+Google Cloud Platform,Cloud,gcp|google cloud|google cloud platform gcp|google cloud software,2436,0.0514,False
+Azure DevOps,Cloud,azure devops services|vsts|microsoft azure devops services,861,0.0182,False
+Amazon S3,Cloud,s3|aws s3,664,0.014,False
+Cloud Security,Cloud,cloud security architecture,590,0.0124,False
+AWS Lambda,Cloud,lambda,571,0.012,False
+Amazon Redshift,Cloud,redshift,432,0.0091,True
+Cloud Architecture,Cloud,cloud design|cloud solutions architecture,404,0.0085,False
+Amazon EC2,Cloud,ec2|aws ec2,400,0.0084,False
+Serverless,Cloud,serverless computing|serverless architecture,220,0.0046,False
+Cloud Migration,Cloud,,189,0.004,False
+Oracle Cloud,Cloud,oci|oracle cloud infrastructure|oracle cloud software,105,0.0022,True
+OpenStack,Cloud,,67,0.0014,False
+IBM Cloud,Cloud,,5,0.0001,False
+Data Analysis,Data Analysis & BI,data analytics|analytics|data analyst|data analysis software|adobe analytics,6389,0.1347,False
+Data Visualization,Data Analysis & BI,data visualisation|visualization|dashboards|dashboard development|data visualization software,2787,0.0588,False
+Reporting,Data Analysis & BI,data reporting|report development|ssrs|sql server reporting services|reporting software,2180,0.046,False
+Power BI,Data Analysis & BI,powerbi|microsoft power bi,1936,0.0408,True
+Statistics,Data Analysis & BI,statistical analysis|statistical modeling|statistical methods|applied statistics|statistical analysis software|statistics software,1796,0.0379,False
+Microsoft Excel,Data Analysis & BI,excel|ms excel|advanced excel|excel vba|spreadsheets,1728,0.0364,True
+Tableau,Data Analysis & BI,,1662,0.035,True
+Business Intelligence,Data Analysis & BI,bi|business intelligence tools|business intelligence software|sap business intelligence,1516,0.032,False
+SAS,Data Analysis & BI,,447,0.0094,True
+Predictive Modeling,Data Analysis & BI,predictive analytics,367,0.0077,False
+A/B Testing,Data Analysis & BI,ab testing|experimentation|experimental design,284,0.006,False
+Pandas,Data Analysis & BI,,273,0.0058,False
+NumPy,Data Analysis & BI,,228,0.0048,False
+Qlik,Data Analysis & BI,qlikview|qlik sense|qlik tech qlikview|qlik software,211,0.0044,False
+Looker,Data Analysis & BI,,168,0.0035,False
+Quantitative Analysis,Data Analysis & BI,quantitative research|quantitative analysis software,160,0.0034,False
+Jupyter,Data Analysis & BI,jupyter notebooks|jupyter notebook|jupyter software,107,0.0023,False
+Google Analytics,Data Analysis & BI,,87,0.0018,True
+SPSS,Data Analysis & BI,ibm spss statistics,75,0.0016,True
+Data Modeling,Data Engineering,data modelling|dimensional modeling|data models|data modeling software,2242,0.0473,False
+ETL,Data Engineering,etl processes|etl development|elt|extract transform load|data pipelines|data pipeline|etl pipelines|amazon data pipeline,2148,0.0453,False
+Data Governance,Data Engineering,data management|master data management|mdm|data stewardship|data management software,2097,0.0442,False
+Data Warehousing,Data Engineering,data warehouse|data warehouses|enterprise data warehouse|dwh|data warehousing software|data warehouse software,1981,0.0418,False
+Apache Spark,Data Engineering,spark|pyspark|spark sql,1733,0.0365,True
+Data Quality,Data Engineering,data integrity|data validation|data cleansing|data cleaning|data validation software,1617,0.0341,False
+Data Engineering,Data Engineering,data engineer,1349,0.0284,False
+Hadoop,Data Engineering,apache hadoop|hdfs|mapreduce,1099,0.0232,True
+Big Data,Data Engineering,big data technologies|big data analytics,1019,0.0215,False
+Data Integration,Data Engineering,,1013,0.0214,False
+Snowflake,Data Engineering,,964,0.0203,True
+Data Architecture,Data Engineering,,709,0.0149,False
+Hive,Data Engineering,apache hive,497,0.0105,True
+Databricks,Data Engineering,,485,0.0102,False
+Apache Airflow,Data Engineering,airflow,439,0.0093,True
+SSIS,Data Engineering,sql server integration services,435,0.0092,False
+Data Migration,Data Engineering,,417,0.0088,False
+Data Lakes,Data Engineering,data lake|data lakehouse|lakehouse,406,0.0086,False
+Stream Processing,Data Engineering,streaming data|real-time data processing|apache flink|flink|kinesis|amazon kinesis|realtime data processing|real time data processing,339,0.0071,False
+Azure Data Factory,Data Engineering,adf|microsoft azure data factory,294,0.0062,False
+Informatica,Data Engineering,informatica software,232,0.0049,True
+BigQuery,Data Engineering,google bigquery,177,0.0037,False
+dbt,Data Engineering,data build tool,165,0.0035,False
+Teradata,Data Engineering,teradata database|teradata software,120,0.0025,True
+Talend,Data Engineering,,84,0.0018,False
+Relational Databases,Databases,rdbms|relational database|relational database management systems|databases|database|database software|relational database software,2583,0.0545,False
+Microsoft SQL Server,Databases,sql server|mssql|ms sql|ms sql server,2360,0.0498,True
+NoSQL,Databases,nosql databases|nosql database,2010,0.0424,True
+Oracle Database,Databases,oracle|oracle db|oracle sql|oracle software,1893,0.0399,True
+PostgreSQL,Databases,postgres|postgre sql,1401,0.0295,True
+MySQL,Databases,my sql,1274,0.0269,True
+Database Design,Databases,database management|database development|database architecture|schema design|database management software|database design software,1141,0.0241,False
+MongoDB,Databases,mongo,1011,0.0213,True
+Elasticsearch,Databases,elastic search|elk|elk stack|elastic stack|opensearch,721,0.0152,True
+Redis,Databases,,431,0.0091,True
+Cassandra,Databases,apache cassandra,430,0.0091,True
+Database Administration,Databases,dba|database administrator,407,0.0086,False
+DynamoDB,Databases,amazon dynamodb|aws dynamodb,317,0.0067,True
+Neo4j,Databases,graph databases|graph database,132,0.0028,False
+Vector Databases,Databases,vector database|vector db|vector search|pinecone|chromadb|faiss|weaviate|milvus|pgvector,54,0.0011,False
+SQLite,Databases,,46,0.001,False
+CI/CD,DevOps & Infrastructure,ci/cd pipelines|cicd|ci cd|continuous integration|continuous delivery|continuous deployment|continuous integration/continuous deployment|ci/cd pipeline|continuous integration software,3855,0.0813,False
+Kubernetes,DevOps & Infrastructure,k8s|kubernetes administration|eks|aks|gke|openshift|red hat openshift,3662,0.0772,True
+DevOps,DevOps & Infrastructure,devops practices|devops tools,3626,0.0764,False
+Docker,DevOps & Infrastructure,docker containers,3333,0.0703,True
+Jenkins,DevOps & Infrastructure,,2261,0.0477,False
+Automation,DevOps & Infrastructure,process automation|it automation,2150,0.0453,False
+Terraform,DevOps & Infrastructure,hashicorp terraform|ibm terraform,1637,0.0345,True
+Scripting,DevOps & Infrastructure,scripting languages|automation scripting|scripting software,1503,0.0317,False
+Monitoring,DevOps & Infrastructure,system monitoring|observability|application monitoring|performance monitoring,1469,0.031,False
+Ansible,DevOps & Infrastructure,ansible software,1366,0.0288,True
+Containers,DevOps & Infrastructure,containerization|container orchestration,1059,0.0223,False
+Configuration Management,DevOps & Infrastructure,configuration management software,995,0.021,False
+Splunk,DevOps & Infrastructure,splunk enterprise,746,0.0157,True
+Infrastructure as Code,DevOps & Infrastructure,iac|infrastructure-as-code|infrastructureascode,644,0.0136,False
+Puppet,DevOps & Infrastructure,,461,0.0097,True
+CloudFormation,DevOps & Infrastructure,aws cloudformation,399,0.0084,False
+Chef,DevOps & Infrastructure,,394,0.0083,True
+Grafana,DevOps & Infrastructure,,328,0.0069,False
+Prometheus,DevOps & Infrastructure,,253,0.0053,False
+Linux Administration,DevOps & Infrastructure,linux system administration|linux server administration,249,0.0052,False
+Site Reliability Engineering,DevOps & Infrastructure,sre,241,0.0051,False
+GitHub Actions,DevOps & Infrastructure,,209,0.0044,False
+Apache HTTP Server,DevOps & Infrastructure,apache|apache web server,208,0.0044,False
+Release Management,DevOps & Infrastructure,release engineering|build and release,202,0.0043,False
+Datadog,DevOps & Infrastructure,,177,0.0037,False
+Helm,DevOps & Infrastructure,,151,0.0032,False
+Nginx,DevOps & Infrastructure,,128,0.0027,False
+New Relic,DevOps & Infrastructure,,98,0.0021,False
+Argo CD,DevOps & Infrastructure,argocd,89,0.0019,False
+GitLab CI,DevOps & Infrastructure,gitlab ci/cd,87,0.0018,False
+Git,Developer Tools,git version control|gitflow,3891,0.082,True
+Jira,Developer Tools,atlassian jira|jira software,2860,0.0603,True
+Version Control,Developer Tools,version control systems|source control|svn|subversion|version control software,1328,0.028,False
+Confluence,Developer Tools,atlassian confluence,1211,0.0255,True
+XML,Developer Tools,extensible markup language|extensible markup language xml,1084,0.0229,True
+GitHub,Developer Tools,github enterprise,1051,0.0222,True
+JSON,Developer Tools,javascript object notation json,992,0.0209,True
+GitLab,Developer Tools,,713,0.015,True
+Maven,Developer Tools,apache maven,635,0.0134,True
+Bitbucket,Developer Tools,atlassian bitbucket,562,0.0118,True
+Visual Studio,Developer Tools,microsoft visual studio,512,0.0108,True
+Gradle,Developer Tools,,259,0.0055,False
+Eclipse,Developer Tools,,231,0.0049,False
+YAML,Developer Tools,,199,0.0042,False
+npm,Developer Tools,yarn,183,0.0039,False
+VS Code,Developer Tools,visual studio code|vscode,127,0.0027,False
+Linux Command Line,Developer Tools,command line|cli|terminal,122,0.0026,False
+IntelliJ IDEA,Developer Tools,intellij,98,0.0021,False
+Microsoft Office,Enterprise Software,microsoft office suite|ms office|office suite|microsoft word|microsoft powerpoint|microsoft outlook|microsoft office software|office suite software,2739,0.0577,True
+Salesforce,Enterprise Software,salesforce crm|salesforce.com|salesforce software|apex|salesforce administration,697,0.0147,True
+SAP,Enterprise Software,sap software|sap erp|sap hana|s/4hana|abap|advanced business application programming abap,642,0.0135,True
+ERP Systems,Enterprise Software,erp|enterprise resource planning|erp software,488,0.0103,False
+CRM Systems,Enterprise Software,crm|customer relationship management,334,0.007,False
+Microsoft Power Platform,Enterprise Software,power apps|powerapps|power automate|microsoft power automate|microsoft power platform software,312,0.0066,True
+Oracle E-Business Suite,Enterprise Software,oracle ebs|oracle applications|oracle peoplesoft|peoplesoft|oracle ebusiness suite|oracle e business suite,144,0.003,True
+Dynamics 365,Enterprise Software,microsoft dynamics|microsoft dynamics 365|dynamics crm|microsoft dynamics crm,139,0.0029,False
+Workday,Enterprise Software,workday software,104,0.0022,True
+ServiceNow Platform,Enterprise Software,servicenow development|servicenow administration,58,0.0012,False
+Machine Learning,Machine Learning & AI,ml|machine learning algorithms|machine learning models,3320,0.07,False
+Artificial Intelligence,Machine Learning & AI,ai|ai/ml|ml/ai|artificial intelligence software,1817,0.0383,False
+Data Science,Machine Learning & AI,data scientist,1634,0.0345,False
+Data Mining,Machine Learning & AI,data mining software,950,0.02,False
+Natural Language Processing,Machine Learning & AI,nlp|natural language understanding|text mining|text analytics|text mining software,702,0.0148,False
+Deep Learning,Machine Learning & AI,neural networks|deep neural networks|dnn,694,0.0146,False
+TensorFlow,Machine Learning & AI,tensorflow 2|tf,653,0.0138,True
+Computer Vision,Machine Learning & AI,image processing|image recognition|object detection|image processing software,650,0.0137,False
+PyTorch,Machine Learning & AI,torch,638,0.0135,True
+Generative AI,Machine Learning & AI,genai|gen ai|generative ai models,347,0.0073,False
+Time Series Analysis,Machine Learning & AI,time series|forecasting|time series forecasting,309,0.0065,False
+MLOps,Machine Learning & AI,ml ops|machine learning operations|model deployment|mlflow|kubeflow,296,0.0062,False
+scikit-learn,Machine Learning & AI,sklearn|scikit learn|scikitlearn,274,0.0058,False
+Large Language Models,Machine Learning & AI,llm|llms|large language model,216,0.0046,False
+CUDA,Machine Learning & AI,gpu programming,192,0.004,False
+Recommender Systems,Machine Learning & AI,recommendation systems|recommendation engines|collaborative filtering,137,0.0029,False
+Keras,Machine Learning & AI,,121,0.0026,False
+Amazon SageMaker,Machine Learning & AI,sagemaker|aws sagemaker,109,0.0023,False
+Reinforcement Learning,Machine Learning & AI,rl,91,0.0019,False
+Hugging Face,Machine Learning & AI,huggingface|transformers,80,0.0017,False
+Model Evaluation,Machine Learning & AI,model validation|model monitoring,78,0.0016,False
+OpenAI API,Machine Learning & AI,openai|gpt|chatgpt|gpt-4|azure openai|gpt4|gpt 4,68,0.0014,False
+Feature Engineering,Machine Learning & AI,,64,0.0013,False
+Azure Machine Learning,Machine Learning & AI,azure ml|azure ai|azure ai foundry|azure cognitive services,51,0.0011,False
+Prompt Engineering,Machine Learning & AI,,42,0.0009,False
+LangChain,Machine Learning & AI,,41,0.0009,False
+XGBoost,Machine Learning & AI,lightgbm|gradient boosting,39,0.0008,False
+Vertex AI,Machine Learning & AI,google vertex ai,17,0.0004,False
+Embeddings,Machine Learning & AI,vector embeddings|word embeddings,16,0.0003,False
+Retrieval-Augmented Generation,Machine Learning & AI,rag|retrieval augmented generation|retrievalaugmented generation,9,0.0002,False
+LlamaIndex,Machine Learning & AI,llama index,5,0.0001,False
+AI Agents,Machine Learning & AI,agentic ai|autonomous agents|multi-agent systems|multiagent systems|multi agent systems,5,0.0001,False
+LangGraph,Machine Learning & AI,,0,0.0,False
+Android Development,Mobile,android|android sdk|google android,618,0.013,True
+iOS Development,Mobile,ios|iphone development|apple ios,567,0.012,True
+Mobile Development,Mobile,mobile app development|mobile applications|mobile application development,402,0.0085,False
+React Native,Mobile,,253,0.0053,False
+Flutter,Mobile,,78,0.0016,False
+Xamarin,Mobile,,48,0.001,False
+SwiftUI,Mobile,,37,0.0008,False
+Troubleshooting,Networking & IT,technical troubleshooting|problem resolution|root cause analysis|root cause analysis software|troubleshooting software,6548,0.1381,False
+Networking,Networking & IT,computer networking|network administration|network engineering|network management|networks|network design|network architecture|network design software|network management software,4484,0.0945,False
+IT Service Management,Networking & IT,itsm|itil|servicenow|incident management|change management|problem management,2820,0.0595,True
+Active Directory,Networking & IT,ad|microsoft active directory|azure active directory|azure ad|entra id|ldap|group policy|active directory software,2332,0.0492,True
+Technical Support,Networking & IT,it support|desktop support|help desk|helpdesk|service desk|end user support|tier 2 support|help desk software,2085,0.044,False
+System Administration,Networking & IT,systems administration|sysadmin|server administration|server management,1500,0.0316,False
+VMware,Networking & IT,vmware vsphere|vsphere|esxi|vcenter,1457,0.0307,False
+Routing and Switching,Networking & IT,routing|switching|routers|switches|bgp|ospf|eigrp|border gateway protocol bgp|enhanced interior gateway routing protocol eigrp|open shortest path first ospf|open source routing protocols ospf|routing software,1424,0.03,True
+Microsoft 365,Networking & IT,office 365|o365|m365|microsoft office 365,1236,0.0261,False
+Virtualization,Networking & IT,virtual machines|hyper-v|hypervisor|hyperv|hyper v,1179,0.0249,False
+TCP/IP,Networking & IT,tcp|tcp ip|ip networking,1178,0.0248,False
+Hardware,Networking & IT,computer hardware|hardware troubleshooting|hardware installation,1153,0.0243,False
+Cisco,Networking & IT,cisco networking|cisco ios|ccna|ccnp,1137,0.024,False
+Backup and Recovery,Networking & IT,disaster recovery|backup|data backup|business continuity|business continuity software|disaster recovery software,1050,0.0221,False
+DNS,Networking & IT,dns management|domain name system dns,1044,0.022,False
+Windows Server,Networking & IT,windows server administration|microsoft windows server,887,0.0187,True
+Microsoft SharePoint,Networking & IT,sharepoint,790,0.0167,True
+VPN,Networking & IT,vpns|virtual private network,701,0.0148,False
+DHCP,Networking & IT,dynamic host configuration protocol dhcp,637,0.0134,False
+LAN/WAN,Networking & IT,lan|wan|wide area network|local area network,561,0.0118,False
+Storage,Networking & IT,san|nas|storage management|storage area network|storage management software,549,0.0116,False
+Microsoft Exchange,Networking & IT,exchange|exchange server|exchange online,496,0.0105,False
+Load Balancing,Networking & IT,load balancers|f5,481,0.0101,False
+Network Troubleshooting,Networking & IT,,456,0.0096,False
+Wireless Networking,Networking & IT,wifi|wi-fi|wlan|wireless|wi fi,410,0.0086,False
+VoIP,Networking & IT,unified communications|telephony|telephony software,269,0.0057,False
+Microsoft Intune,Networking & IT,intune,250,0.0053,False
+SCCM,Networking & IT,microsoft sccm|mecm|endpoint configuration manager,238,0.005,False
+CompTIA A+,Networking & IT,a+|comptia a plus,204,0.0043,False
+Linux,Operating Systems,linux os|red hat|red hat enterprise linux|rhel|ubuntu|centos|debian,4548,0.0959,True
+Windows,Operating Systems,microsoft windows|windows os|windows 10|windows 11,2758,0.0581,True
+Unix,Operating Systems,unix systems|solaris|aix|oracle solaris|ibm aix,1134,0.0239,True
+Embedded Systems,Operating Systems,embedded software|embedded|firmware|rtos|embedded c,966,0.0204,False
+Operating Systems,Operating Systems,os|operating system|operating system software,784,0.0165,False
+macOS,Operating Systems,mac os|apple macos|os x,343,0.0072,True
+Software Development,Practices & Methods,software engineering|application development|programming|coding|software design|software development tools,10052,0.2119,False
+Agile,Practices & Methods,agile methodologies|agile methodology|agile development|agile software development|agile practices|kanban,8810,0.1857,False
+Project Management,Practices & Methods,it project management|technical project management|project planning|pmp|project management software|project planning software,5920,0.1248,False
+Technical Documentation,Practices & Methods,documentation|technical writing|software documentation,4617,0.0973,False
+Systems Engineering,Practices & Methods,systems integration|system integration|systems integration software,3009,0.0634,False
+Requirements Gathering,Practices & Methods,requirements analysis|business requirements|requirements management|requirements|requirements management software|requirements analysis software,2680,0.0565,False
+Scrum,Practices & Methods,scrum methodology|scrum master|sprint planning,2266,0.0478,False
+Software Development Life Cycle,Practices & Methods,sdlc|software development lifecycle|software development life cycle sdlc,1797,0.0379,False
+Business Analysis,Practices & Methods,business analyst|business process analysis|process improvement|process mapping|business analysis software,1633,0.0344,False
+Performance Optimization,Practices & Methods,performance tuning|optimization|query optimization|optimization software,1529,0.0322,False
+UI/UX Design,Practices & Methods,ux design|ui design|user experience|user interface design|ux|ui|figma|wireframing|prototyping|user interface design software,1398,0.0295,True
+Code Review,Practices & Methods,code reviews|peer code review,1203,0.0254,False
+Product Management,Practices & Methods,product development|product strategy|product roadmap,1039,0.0219,False
+DevSecOps,Practices & Methods,,646,0.0136,False
+Program Management,Practices & Methods,technical program management|tpm,401,0.0085,False
+Waterfall,Practices & Methods,,345,0.0073,False
+Open Source,Practices & Methods,open source software|open-source|opensource,209,0.0044,False
+Python,Programming Languages,python3|python programming|python scripting,11195,0.236,True
+SQL,Programming Languages,structured query language|structured query language sql|sql programming|sql queries|t-sql|tsql|pl/sql|plsql|t sql|structure query language sql|oracle pl/sql,9649,0.2034,True
+Java,Programming Languages,java programming|core java|java se|java ee|j2ee|oracle java,7670,0.1617,True
+JavaScript,Programming Languages,js|javascript programming|ecmascript|es6,5149,0.1086,True
+C++,Programming Languages,cpp|c plus plus|c/c++,4252,0.0896,True
+C#,Programming Languages,c sharp|csharp,3171,0.0669,True
+TypeScript,Programming Languages,ts,1861,0.0392,True
+Bash,Programming Languages,bash scripting|shell scripting|shell script|shell|unix shell,1845,0.0389,True
+Go,Programming Languages,golang|go programming|go language,1778,0.0375,True
+PowerShell,Programming Languages,powershell scripting|windows powershell|microsoft powershell|microsoft windows powershell,1409,0.0297,True
+R,Programming Languages,r programming|r language|rstudio,1335,0.0281,True
+Scala,Programming Languages,,1176,0.0248,True
+C,Programming Languages,c programming|c language,1070,0.0226,True
+MATLAB,Programming Languages,the mathworks matlab,839,0.0177,True
+Perl,Programming Languages,,612,0.0129,True
+PHP,Programming Languages,,606,0.0128,True
+Ruby,Programming Languages,ruby programming,565,0.0119,True
+Visual Basic,Programming Languages,vb|vba|vb.net|microsoft visual basic|microsoft visual basic for applications vba|visual basic for applications,492,0.0104,True
+Kotlin,Programming Languages,,437,0.0092,False
+Rust,Programming Languages,rust programming|rust programming language,320,0.0067,False
+Swift,Programming Languages,swift programming,303,0.0064,True
+COBOL,Programming Languages,common business oriented language cobol,219,0.0046,False
+Groovy,Programming Languages,apache groovy,163,0.0034,False
+Assembly,Programming Languages,assembly language,142,0.003,False
+Objective-C,Programming Languages,objective c|objc|objectivec,121,0.0026,False
+Fortran,Programming Languages,formula translation/translator fortran,54,0.0011,False
+Dart,Programming Languages,,37,0.0008,False
+Lua,Programming Languages,,30,0.0006,False
+Solidity,Programming Languages,,27,0.0006,False
+Julia,Programming Languages,,23,0.0005,False
+Elixir,Programming Languages,,17,0.0004,False
+Haskell,Programming Languages,,10,0.0002,False
+Cybersecurity,Security,cyber security|information security|infosec|it security|security|data security,5736,0.1209,False
+Network Security,Security,firewalls|firewall|firewall management|ids/ips|intrusion detection|firewall software,2428,0.0512,False
+Risk Assessment,Security,risk management|it risk management|security risk assessment|risk management software|security risk assessment software|risk assessment software,2351,0.0496,False
+Security Clearance,Security,secret clearance|top secret clearance|ts/sci|ts/sci clearance|active secret clearance,2263,0.0477,False
+Compliance,Security,regulatory compliance|security compliance|nist|iso 27001|soc 2|hipaa|pci dss|pci|fedramp|gdpr|compliance software,1969,0.0415,False
+Identity and Access Management,Security,iam|identity management|access management|access control|okta|sso|single sign-on|single signon|single sign on|access management software,1189,0.0251,False
+Vulnerability Management,Security,vulnerability assessment|vulnerability scanning|vulnerability assessments,1005,0.0212,False
+Incident Response,Security,security incident response|incident handling,949,0.02,False
+CISSP,Security,,901,0.019,False
+Encryption,Security,cryptography|pki|public key infrastructure|tls|ssl|encryption software,822,0.0173,False
+Threat Intelligence,Security,threat analysis|threat detection|threat modeling|threat hunting,643,0.0136,False
+CompTIA Security+,Security,security+|security plus|comptia security plus,602,0.0127,False
+Penetration Testing,Security,pen testing|pentesting|ethical hacking|penetration testing software,581,0.0122,False
+Endpoint Security,Security,endpoint protection|edr|antivirus|antivirus software,477,0.0101,False
+SIEM,Security,security information and event management,439,0.0093,False
+Application Security,Security,appsec|secure coding|owasp|application security testing,424,0.0089,False
+Security Operations,Security,soc|security operations center,323,0.0068,False
+Zero Trust,Security,,45,0.0009,False
+Communication,Soft Skills,verbal communication|written communication|oral communication|written and verbal communication|excellent communication|interpersonal communication,15774,0.3326,False
+Problem Solving,Soft Skills,problemsolving|problem-solving|critical thinking|analytical thinking,11211,0.2364,False
+Teamwork,Soft Skills,collaboration|team player|teamwork and collaboration|team collaboration|cross-functional collaboration|cross-functional teams|crossfunctional collaboration|crossfunctional teams|cross functional collaboration|cross functional teams,9929,0.2093,False
+Leadership,Soft Skills,team leadership|technical leadership|people management|team management,5851,0.1234,False
+Time Management,Soft Skills,prioritization|multitasking|organizational|organization,4819,0.1016,False
+Analytical Skills,Soft Skills,analytical abilities|analysis|analytical software,4359,0.0919,False
+Customer Service,Soft Skills,customer support|client service|customer focus,3281,0.0692,False
+Attention to Detail,Soft Skills,detail oriented|detail-oriented|detailoriented,3096,0.0653,False
+Interpersonal Skills,Soft Skills,relationship building,2811,0.0593,False
+Mentoring,Soft Skills,coaching|mentorship,2576,0.0543,False
+Training,Soft Skills,training and development|user training|end user training|training software,1851,0.039,False
+Self-Motivation,Soft Skills,self-motivated|self starter|initiative|independent work|ability to work independently|selfmotivation|selfmotivated|self motivation|self motivated,1768,0.0373,False
+Adaptability,Soft Skills,flexibility|adaptable|learning agility,1696,0.0358,False
+Presentation Skills,Soft Skills,presentations|public speaking|presentation software,1662,0.035,False
+Decision Making,Soft Skills,decision-making|sound judgment|decisionmaking,1379,0.0291,False
+Stakeholder Management,Soft Skills,stakeholder communication|stakeholder engagement|client relationship management,1000,0.0211,False
+Software Testing,Testing & QA,testing|qa testing|manual testing|functional testing|test cases|test planning|test plans|functional testing software|testing software,4774,0.1007,False
+Unit Testing,Testing & QA,unit tests|junit|pytest|jest|nunit|testng|mocha|unit testing software,2838,0.0598,True
+Quality Assurance,Testing & QA,qa|quality control|quality control software,1943,0.041,False
+Debugging,Testing & QA,troubleshooting code|defect tracking|bug tracking|defect tracking software|debugging software,1787,0.0377,False
+Test Automation,Testing & QA,automated testing|automation testing|test automation frameworks|test automation software,1447,0.0305,False
+Integration Testing,Testing & QA,integration tests|end-to-end testing|e2e testing|system testing|regression testing|endtoend testing|end to end testing|integration testing software|regression testing software|system testing software,1413,0.0298,False
+Test-Driven Development,Testing & QA,tdd|test driven development|testdriven development,854,0.018,False
+Selenium,Testing & QA,selenium webdriver,676,0.0143,True
+Performance Testing,Testing & QA,load testing|stress testing|jmeter|loadrunner|load testing software|stress testing software|apache jmeter,671,0.0141,False
+API Testing,Testing & QA,postman|soapui|rest assured,462,0.0097,False
+Behavior-Driven Development,Testing & QA,bdd|cucumber|gherkin|behaviordriven development|behavior driven development,440,0.0093,False
+User Acceptance Testing,Testing & QA,uat,315,0.0066,False
+Cypress,Testing & QA,,169,0.0036,False
+Mobile Testing,Testing & QA,appium,155,0.0033,False
+Playwright,Testing & QA,,68,0.0014,False
+React,Web Frontend,reactjs|react.js|react js,2931,0.0618,True
+HTML,Web Frontend,html5|hypertext markup language|hypertext markup language html,2905,0.0612,True
+CSS,Web Frontend,css3|cascading style sheets|cascading style sheets css,2480,0.0523,True
+Angular,Web Frontend,angularjs|angular.js|angular js|google angular,2254,0.0475,True
+Web Development,Web Frontend,web application development|web applications|web technologies,1259,0.0265,False
+Frontend Development,Web Frontend,front end development|front-end development|frontend|front end|front-end|ui development,810,0.0171,False
+jQuery,Web Frontend,,768,0.0162,True
+Vue.js,Web Frontend,vue|vuejs|vue js,511,0.0108,True
+Bootstrap,Web Frontend,,486,0.0102,True
+Redux,Web Frontend,,270,0.0057,False
+Responsive Design,Web Frontend,responsive web design,198,0.0042,False
+Sass,Web Frontend,scss|syntactically awesome style sheets sass,192,0.004,False
+Webpack,Web Frontend,,190,0.004,False
+Accessibility,Web Frontend,web accessibility|wcag|508 compliance,183,0.0039,False
+Next.js,Web Frontend,nextjs|next js,177,0.0037,False
+Tailwind CSS,Web Frontend,tailwind,48,0.001,False
+Svelte,Web Frontend,,25,0.0005,False
