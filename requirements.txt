@@ -1,0 +1,31 @@
+# Python >= 3.10 (developed on 3.12)
+
+# Data processing
+pandas>=2.2,<3.0
+numpy>=1.26,<3.0
+pyarrow>=15.0
+
+# Recommender models
+scikit-learn>=1.5,<2.0          # TF-IDF baseline, K-means
+sentence-transformers>=3.0      # embeddings for semantic retrieval
+chromadb>=0.5                   # vector store
+mlxtend>=0.23                   # association rule mining (Apriori / FP-Growth)
+
+# Resume parsing
+pypdf>=4.0
+
+# Agents / LLM
+langgraph>=0.2.60,<2.0
+langchain-openai>=0.2
+openai>=1.55,<3.0
+python-dotenv>=1.0,<2.0
+
+# UI / visualization
+streamlit>=1.38
+plotly>=5.22
+
+# Dev
+pytest>=8.0
+
+# Install the project package itself (src/skillpath) in editable mode
+-e .
