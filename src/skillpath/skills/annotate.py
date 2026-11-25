@@ -8,7 +8,10 @@ Jobs (adds columns to processed/jobs.parquet):
   skills_canonical  union of both, listed first. This is what the recommenders use.
 
 Courses (writes processed/courses.parquet from the raw Coursera CSV):
-  skills            canonical skills found in the course's Skills field, title and description
+  skills            canonical skills found in the course's title and description
+  skills_field      canonical skills in the raw Skills field. For reference only: the field is
+                    noisy (an employee-onboarding course lists "Deep Learning", a Selenium
+                    course lists PyTorch and "biology"), so it doesn't feed `skills`.
   is_tech           has at least one technical skill
 """
 
@@ -47,11 +50,12 @@ def build_courses(extractor: SkillExtractor) -> pd.DataFrame:
     raw["rating"] = pd.to_numeric(raw["rating"], errors="coerce")  # "Not Calibrated" -> NaN
     raw["difficulty"] = raw["difficulty"].where(raw["difficulty"].isin(["Beginner", "Intermediate", "Advanced", "Mixed"]))
     raw["description"] = raw["description"].fillna("").str.replace(r"\s+", " ", regex=True).str.strip()
-    text = raw["skills_raw"].fillna("") + " . " + raw["title"] + " . " + raw["description"]
-    raw["skills"] = text.map(extractor.extract)
+    raw["skills"] = (raw["title"] + " . " + raw["description"]).map(extractor.extract)
+    raw["skills_field"] = raw["skills_raw"].fillna("").map(extractor.extract)
     raw["is_tech"] = raw["skills"].map(lambda ss: any(extractor.taxonomy.is_technical(s) for s in ss))
     raw["course_id"] = raw["url"].map(lambda u: hashlib.sha1(str(u).encode()).hexdigest()[:12])
-    cols = ["course_id", "title", "provider", "difficulty", "rating", "url", "skills", "is_tech", "description", "skills_raw"]
+    cols = ["course_id", "title", "provider", "difficulty", "rating", "url", "skills", "is_tech", "description",
+            "skills_field", "skills_raw"]
     return raw[cols].reset_index(drop=True)
 
 

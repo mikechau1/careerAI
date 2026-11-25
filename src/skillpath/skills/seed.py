@@ -17,7 +17,7 @@ EXACT_ONLY = {
     "r", "go", "c", "dart", "julia", "swift", "lua", "chef", "puppet", "express", "rails", "spark",
     "hive", "shell", "lambda", "exchange", "rest", "api", "apis", "ad", "tf", "ts", "js", "vb", "bi",
     "rl", "ml", "ai", "qa", "ui", "ux", "a+", "elk", "pci", "san", "nas", "soc", "sso", "iam", "erp", "crm",
-    "f5", "wan", "lan", "uat", "tdd", "bdd", "tpm", "dba", "mdm", "adf", "oci", "ood", "oop", "dsa", "cli", "os",
+    "f5", "wan", "lan", "uat", "node", "tdd", "bdd", "tpm", "dba", "mdm", "adf", "oci", "ood", "oop", "dsa", "cli", "os",
     # generic words that only mean a skill when listed as one
     "analysis", "analytics", "organization", "initiative", "requirements", "training", "programming",
     "coding", "testing", "security", "cloud", "networks", "wireless", "hardware", "storage", "backup",
