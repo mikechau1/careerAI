@@ -18,6 +18,7 @@ data/processed/*
 
 # Local state: vector store, SQLite memory, uploaded resumes, agent logs
 data/chroma/
+data/models/
 data/*.db
 data/uploads/
 logs/
