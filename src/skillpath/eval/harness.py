@@ -41,7 +41,7 @@ def get_models(names: list[str]) -> dict:
             models[name] = SemanticRecommender.load()
         elif name.startswith("hybrid"):
             from skillpath.recsys.hybrid import HybridRecommender
-            models[name] = HybridRecommender.load(use_role=(name != "hybrid-norole"))
+            models[name] = HybridRecommender.load(variant=name.split("-", 1)[1] if "-" in name else "full")
         else:
             raise ValueError(f"unknown model {name!r}")
     return models

@@ -12,8 +12,10 @@ Fixed test profiles and relevance labels, so that every model is scored on exact
 ## Running it
 
 ```bash
-python -m skillpath.eval.harness --models tfidf semantic hybrid hybrid-norole
+python -m skillpath.eval.harness --models tfidf semantic hybrid-text hybrid-norole hybrid
 ```
+
+Current results and how to read them: [docs/results/model_comparison.md](../docs/results/model_comparison.md).
 
 For each profile, every model returns its top 50 jobs. The union of those lists is the **pool**. Each job in the pool gets a grade, and the harness reports P@K, R@K, F1@K and NDCG@K for K = 5 and 10.
 - **No role filter** is passed to the models.
@@ -30,7 +32,7 @@ relevant (binary metrics) = grade >= 2
 
 - The role family comes from the job **title** (M1-04), and fit uses the employer's **listed** skills.
 - Models 1 and 2 rank on the full job text, so these labels don't just reward what a model looks at.
-- Model 3 uses skill overlap and the target role as features. Read its scores next to the `hybrid-norole` ablation.
+- Model 3 uses skill overlap and the target role as features, which mirror the judge's two signals. Its full score is inflated by construction. **The fair comparison is `hybrid-text`** (Models 1 + 2 combined, nothing the judge uses).
 
 **These are proxy labels, not human judgments.** Before the final report, someone should hand-check a sample:
 1. Open `qrels.csv`.
