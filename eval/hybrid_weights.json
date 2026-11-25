@@ -1,0 +1,8 @@
+{
+  "tfidf": 0.5,
+  "semantic": 0.5,
+  "skill": 0.5,
+  "related": 0.25,
+  "role": 1.0,
+  "feedback": 0.5
+}
